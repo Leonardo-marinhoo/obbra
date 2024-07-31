@@ -1,0 +1,36 @@
+.pendencia{
+    display:flex;
+    align-items: center;                                                
+    width: 100%;
+    background: #fff;
+    padding: 0.7rem;
+    box-shadow: 0 2px 1px 1px rgba(41, 41, 41, 0.114);
+    border-radius: 10px;
+}
+.pendencia-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.pendencia-icon .icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color:rgb(12, 194, 82);
+}
+.pendencia-icon .folder-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color:rgb(162, 162, 162);
+}
+
+.pendencia-title{
+    color:rgb(21, 21, 21);
+}
+.pendencia-description{
+    color:rgb(35, 35, 35);
+}

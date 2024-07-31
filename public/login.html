@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="src/css/globalStyle.css">
+    <link rel="stylesheet" href="src/css/login.css">
+    <title>Login Obra</title>
+</head>
+
+<body>
+    <input type="text" style="display:none">
+    <input type="password" style="display:none">
+    <div class="container">
+        <form action="./src/database/auth.php" method="POST" class="login-input">
+            <!-- <h1>Login</h1> -->
+            <img src="./src/images/araujo_simão-removebg.png" alt="">
+            <!-- <div class="underline"></div> -->
+            <div class="input-field">
+                <i class="fi fi-rs-user"></i>
+                <input type="text" value="" placeholder="Usuario" name="user">
+            </div>
+            <div class="input-field">
+                <i class="fi fi-rr-lock"></i>
+                <input type="password" value="" placeholder="Senha" name="password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
