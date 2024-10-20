@@ -100,17 +100,15 @@ hr {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 2rem;
 }
 .vistorias-container__header {
   display: flex;
-  width: 95%;
+  width: 100%;
   padding: 0.8rem 1rem;
   font-family: "Poppins";
   font-weight: 500;
   color: rgb(255, 255, 255);
   background-color: rgb(66, 66, 66);
-  border-radius: 10px 10px 0 0;
 }
 .vistorias-container__header .title {
   text-transform: uppercase;

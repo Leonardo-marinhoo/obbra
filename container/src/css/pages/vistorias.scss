@@ -102,7 +102,7 @@ hr {
   border-radius: 4px;
 }
 
-.container{
+.container {
   overflow-x: hidden;
   // background-color: white;
 }
@@ -112,28 +112,27 @@ hr {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  margin-top: 2rem;
+  // margin-top: 2rem;
 
-  &__header{
+  &__header {
     display: flex;
-    width: 95%;
+    width: 100%;
     padding: 0.8rem 1rem;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 500;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     background-color: rgb(66, 66, 66);
-    border-radius: 10px 10px 0 0;
+    // border-radius: 10px 10px 0 0;
 
-    .title{
+    .title {
       text-transform: uppercase;
     }
 
-    .vistoria{
-
+    .vistoria {
     }
   }
 
-  .vistoria{
+  .vistoria {
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -142,56 +141,55 @@ hr {
     padding: 1rem;
     background-color: white;
     box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.097);
-    border-radius:0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
 
-
-    &-header{
+    &-header {
       display: flex;
       align-items: center;
       width: 100%;
       height: fit-content;
       justify-content: space-between;
 
-      &__info{
+      &__info {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 0.3rem;
 
-        .info-title{
-          font-family: 'Roboto';
+        .info-title {
+          font-family: "Roboto";
           font-size: 0.7rem;
-          color:rgb(163, 163, 163);
+          color: rgb(163, 163, 163);
         }
-        .info-text{
+        .info-text {
           font-size: 1rem;
           padding: 0.5rem;
           border-radius: 8px;
         }
 
-
-        &--apto{
-          .info-text{
+        &--apto {
+          .info-text {
             padding-inline: 2rem;
             background-color: black;
-            color:white;       
+            color: white;
           }
         }
-        &--hour, &--date{
-          .info-text{
+        &--hour,
+        &--date {
+          .info-text {
             background-color: #f3f3f3;
-            color:rgb(0, 0, 0);       
+            color: rgb(0, 0, 0);
             padding-inline: 2rem;
           }
         }
-        &--date{
-          .info-text{
+        &--date {
+          .info-text {
             font-size: 0.8rem;
           }
         }
       }
     }
-    &-checklist{
+    &-checklist {
       display: flex;
       flex-wrap: wrap;
       list-style: none;
@@ -199,25 +197,24 @@ hr {
       margin-top: 2rem;
       justify-content: center;
 
-      &__item{
+      &__item {
         border: 1px solid rgba(0, 0, 0, 0.056);
         padding: 0.2rem 0.5rem;
         text-transform: uppercase;
         font-size: 0.85rem;
       }
 
-      .status-pendente{
+      .status-pendente {
         background-color: rgb(230, 63, 63);
-        color:white;
+        color: white;
       }
-      .status-ok{
+      .status-ok {
         background-color: rgb(24, 187, 24);
-        color:white;
+        color: white;
       }
     }
-    &-obs{
+    &-obs {
       margin-top: 1rem;
     }
   }
-
 }

@@ -20,7 +20,7 @@ if (!isset($_SESSION['user_id'])) {
   <title>Obbra</title>
   <link rel="stylesheet" href="../dist/css/main.css">
   <link rel="stylesheet" href="../dist/css/projetos.css">
-  <link rel="stylesheet" href="../dist/css/pages/vistorias.css?v=0.8781">
+  <link rel="stylesheet" href="../dist/css/pages/vistorias.css?v=0.881">
   <script src="../dist/packages/jquery/jquery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../src/js/projetos.js"></script>
