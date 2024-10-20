@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obbra</title>
+    <script src="./dist/packages/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="stylesheet" href="./dist/css/pages/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="auth.php" class="login-form" method="POST">
+        <h1 class="title">LOGIN</h1>
+        <div class="input-field">
+          <div class="input-field__icon">
+            <i class="fi fi-ss-user"></i>
+          </div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Usuário"
+          />
+        </div>
+        <div class="input-field">
+          <div class="input-field__icon">
+            <i class="fi fi-ss-lock"></i>
+          </div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+        </div>
+        <button class="login-btn" type="submit">ENTRAR</button>
+      </form>
+    </div>
+  </body>
+</html>

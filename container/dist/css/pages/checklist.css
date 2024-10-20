@@ -1,0 +1,94 @@
+.container {
+  background-color: none;
+}
+
+.checklist-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+}
+.checklist-container .schedule {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 5rem;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 4px 2px 3px rgba(0, 0, 0, 0.019);
+}
+.checklist-container .schedule .schedule-border {
+  height: 100%;
+  background-color: rgb(220, 46, 46);
+  width: 0.5rem;
+}
+.checklist-container .schedule .schedule-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.checklist-container .schedule .schedule-container a {
+  color: rgb(52, 82, 139);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.checklist-container .schedule .schedule-container .schedule-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 3rem;
+  padding: 0;
+  font-weight: bold;
+}
+.checklist-container .schedule .schedule-container .schedule-progress .progress {
+  margin: auto;
+  position: relative;
+  max-width: 3rem;
+}
+.checklist-container .schedule .schedule-container .schedule-progress .red-square {
+  margin: auto;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: red;
+  border-radius: 8px;
+}
+.checklist-container .schedule .schedule-container .schedule-icon {
+  color: rgb(197, 197, 197);
+}
+.checklist-container .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 4px 5px 5px rgba(0, 0, 0, 0.071);
+  padding: 1rem 0.7rem;
+  border-radius: 4px;
+  gap: 0.5rem;
+  background-color: white;
+}
+.checklist-container .task .task-info {
+  font-size: 0.7rem;
+  color: black;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.checklist-container .task .task-actions {
+  width: fit-content;
+}
+.checklist-container .task .task-actions .form-select {
+  font-size: small;
+  width: 7rem;
+  background-color: rgb(6, 141, 118);
+  color: white;
+}
+
+/*# sourceMappingURL=checklist.css.map */

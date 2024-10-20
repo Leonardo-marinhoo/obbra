@@ -1,0 +1,102 @@
+.pages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+
+  &__item {
+    list-style: none;
+    text-transform: uppercase;
+    height: 7rem;
+    width: 90%;
+    border-radius: 8px;
+
+    .link_container {
+      padding: 0.8rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+
+      &:visited {
+        text-decoration: none;
+      }
+
+      .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        .title {
+          font-family: "Roboto";
+          font-weight: 600;
+        }
+
+        .subtitle {
+          width: 100%;
+          font-size: 0.65rem;
+          color: rgba(255, 255, 255, 0.803);
+        }
+      }
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 4rem;
+        color: rgba(255, 255, 255, 0.548);
+
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    &--orange {
+      background: linear-gradient(90deg, rgb(255, 130, 63), rgb(251, 92, 18));
+      .link_container {
+        color: white;
+      }
+    }
+    &--blue {
+      background: linear-gradient(90deg, rgb(24, 110, 223), rgb(0, 148, 246));
+      .link_container {
+        color: white;
+      }
+    }
+    &--red {
+      background: linear-gradient(90deg, rgb(244, 55, 55), rgb(255, 76, 76));
+      .link_container {
+        color: white;
+      }
+    }
+    &--green {
+      background: linear-gradient(90deg, rgb(80, 162, 53), rgb(0, 177, 56));
+      .link_container {
+        color: white;
+      }
+    }
+    &--purple {
+        background: linear-gradient(90deg, rgb(53, 89, 162), rgb(0, 71, 177));
+        .link_container {
+          color: white;
+        }
+      }
+      &--black {
+        background: linear-gradient(90deg, rgb(45, 45, 45), rgb(34, 34, 34));
+        .link_container {
+          color: white;
+        }
+      }
+  }
+}

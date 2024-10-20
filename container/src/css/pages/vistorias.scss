@@ -1,0 +1,223 @@
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+.filter-tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.079);
+
+  .tab-title {
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .dropdown {
+    background: linear-gradient(
+      90deg,
+      rgb(0, 140, 215),
+      rgb(51, 163, 255)
+    ) !important;
+    color: white;
+    margin-right: 0.5rem;
+
+    button {
+      color: white;
+    }
+  }
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 0.7rem;
+  margin-right: 0.8rem;
+  padding: 0.5rem 0.5rem;
+
+  &--border {
+    border: 1px solid rgba(0, 0, 0, 0.279);
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.101);
+  padding: 0.8rem 0.5rem;
+
+  i {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 0.55rem;
+    width: fit-content;
+    color: rgba(82, 82, 82, 0.866);
+  }
+}
+hr {
+  margin: 1rem auto;
+  max-width: 95%;
+  border-color: rgba(0, 0, 0, 0.119);
+}
+
+.new-pendency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59%;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  background: rgb(22, 161, 82);
+  margin: 2rem auto;
+  // margin-bottom: 2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.container{
+  overflow-x: hidden;
+  // background-color: white;
+}
+
+.vistorias-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__header{
+    display: flex;
+    width: 95%;
+    padding: 0.8rem 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px 10px 0 0;
+
+    .title{
+      text-transform: uppercase;
+    }
+
+    .vistoria{
+
+    }
+  }
+
+  .vistoria{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    min-height: 5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.097);
+    border-radius:0 0 10px 10px;
+
+
+    &-header{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: fit-content;
+      justify-content: space-between;
+
+      &__info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+
+        .info-title{
+          font-family: 'Roboto';
+          font-size: 0.7rem;
+          color:rgb(163, 163, 163);
+        }
+        .info-text{
+          font-size: 1rem;
+          padding: 0.5rem;
+          border-radius: 8px;
+        }
+
+
+        &--apto{
+          .info-text{
+            padding-inline: 2rem;
+            background-color: black;
+            color:white;       
+          }
+        }
+        &--hour, &--date{
+          .info-text{
+            background-color: #f3f3f3;
+            color:rgb(0, 0, 0);       
+            padding-inline: 2rem;
+          }
+        }
+        &--date{
+          .info-text{
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    &-checklist{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 0.45rem;
+      margin-top: 2rem;
+      justify-content: center;
+
+      &__item{
+        border: 1px solid rgba(0, 0, 0, 0.056);
+        padding: 0.2rem 0.5rem;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+      }
+
+      .status-pendente{
+        background-color: rgb(230, 63, 63);
+        color:white;
+      }
+      .status-ok{
+        background-color: rgb(24, 187, 24);
+        color:white;
+      }
+    }
+    &-obs{
+      margin-top: 1rem;
+    }
+  }
+
+}

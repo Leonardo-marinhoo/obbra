@@ -1,0 +1,75 @@
+.file_explorer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+.file_explorer .item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: rgb(247, 247, 247);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.056);
+}
+.file_explorer .item__title {
+  text-transform: uppercase;
+}
+.file_explorer .item .icon img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.pdf_view {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(41, 41, 41, 0.54);
+}
+.pdf_view #pdf-canvas {
+  overflow: auto;
+  background-color: white;
+  max-width: 90%;
+  max-height: 90%;
+}
+.pdf_view #close-btn {
+  margin-left: auto;
+  margin-right: 5%;
+  margin-bottom: 1rem;
+  height: 4rem;
+  width: auto;
+  padding: 5px 10px;
+  background-color: rgb(125, 125, 125);
+  color: rgb(255, 255, 255) !important;
+  font-size: 3rem;
+  border: 1px solid black;
+  border: none;
+  cursor: pointer;
+}
+
+.breadcumb {
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  background: rgb(255, 202, 104);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0.107);
+  width: 92%;
+  margin: 0 auto;
+  font-family: "Roboto";
+}
+.breadcumb__title {
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+.breadcumb img {
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=projetos.css.map */

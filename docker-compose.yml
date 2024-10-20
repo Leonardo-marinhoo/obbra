@@ -1,0 +1,49 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: obbra_v2
+    ports:
+      - "80:80"
+    volumes: 
+      - ./container:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - obbra_v2-network
+
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: muitaobra
+      MYSQL_DATABASE: obbra_v2
+      MYSQL_PASSWORD: muitaobra
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - obbra_v2-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql-db
+      PMA_USER: root
+      PMA_PASSWORD: muitaobra
+    ports:
+      - "82:80"
+    depends_on:
+      - db
+    networks:
+      - obbra_v2-network
+
+volumes:
+  db_data:
+
+networks:
+  obbra_v2-network:

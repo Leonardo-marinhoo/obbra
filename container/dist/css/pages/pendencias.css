@@ -1,0 +1,196 @@
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+.filter-tab {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.079);
+}
+.filter-tab .tab-title {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.filter-tab .dropdown {
+  background: linear-gradient(90deg, rgb(0, 140, 215), rgb(51, 163, 255)) !important;
+  color: white;
+  margin-right: 0.5rem;
+}
+.filter-tab .dropdown button {
+  color: white;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 0.7rem;
+  margin-right: 0.8rem;
+  padding: 0.5rem 0.5rem;
+}
+.dropdown--border {
+  border: 1px solid rgba(0, 0, 0, 0.279);
+}
+.dropdown .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown button {
+  display: flex;
+  align-items: center;
+  background: none;
+  outline: none;
+  border: none;
+}
+.dropdown button i {
+  margin-right: 0.5rem;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.8rem 0.5rem;
+}
+.dropdown-item i {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-right: 0.55rem;
+  width: fit-content;
+  color: rgba(82, 82, 82, 0.866);
+}
+
+hr {
+  margin: 1rem auto;
+  max-width: 95%;
+  border-color: rgba(0, 0, 0, 0.119);
+}
+
+.pendencias-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.pendencias-container .pendencia {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.067);
+  margin-bottom: 2rem;
+  border-top: 4px solid rgb(0, 0, 0);
+}
+.pendencias-container .pendencia__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.097);
+  background-color: rgba(221, 221, 221, 0.263);
+}
+.pendencias-container .pendencia__header .title {
+  font-family: "Poppins";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.pendencias-container .pendencia__header .date {
+  padding: 0.3rem 0.5rem;
+  background: black;
+  color: white;
+}
+.pendencias-container .pendencia__header .autor {
+  margin-top: 0.5rem;
+  width: 100%;
+  color: rgb(112, 112, 112);
+}
+.pendencias-container .pendencia__header .autor i {
+  margin-right: 0.3rem;
+}
+.pendencias-container .pendencia__body {
+  padding: 1rem;
+  min-height: 1rem;
+}
+.pendencias-container .pendencia__footer {
+  display: flex;
+  padding: 1rem;
+}
+.pendencias-container .pendencia__footer .form-select {
+  width: fit-content;
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins";
+  background-color: rgba(128, 128, 128, 0.13);
+}
+.pendencias-container .pendencia__footer .dropdown {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.13);
+}
+.pendencias-container .pendencia__footer .dropdown,
+.pendencias-container .pendencia__footer .form-select {
+  height: 2rem;
+}
+
+.Alta {
+  color: white;
+  background-color: rgb(239, 68, 68) !important;
+}
+
+.Normal {
+  color: white;
+  background-color: rgb(27, 176, 86) !important;
+}
+
+.Baixa {
+  color: white;
+  background-color: rgb(121, 137, 134) !important;
+}
+
+.Pendente {
+  background-color: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  border-bottom: 4px solid rgb(239, 68, 68) !important;
+}
+
+.Resolvendo {
+  background-color: transparent !important;
+  border-bottom: 4px solid rgb(27, 176, 86) !important;
+}
+
+.Concluido {
+  background-color: transparent !important;
+  border-bottom: 4px solid rgb(35, 155, 135) !important;
+}
+
+.new-pendency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 59%;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  background: rgb(11, 152, 30);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=pendencias.css.map */

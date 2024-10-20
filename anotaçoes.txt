@@ -1,0 +1,1 @@
+// "serve": "browser-sync start --proxy app/admin --files **/** ",

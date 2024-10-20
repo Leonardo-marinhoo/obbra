@@ -1,0 +1,47 @@
+<div class="schedule-border"></div>
+<div class="schedule-container">
+    <div class="schedule-info">
+      <a href="?id=${element.id}">${element.schedule_name}</a>
+    </div>
+    <div class="schedule-progress">
+      <div class="progress" data-schedule_id="${element.id}"></div>
+    </div>
+    <div class="schedule-icon">
+      <i class="fi fi-br-angle-right"></i>
+    </div>
+
+</div>
+
+
+<!-- ////TASK -->
+<div  class='task-info'>
+    <a href="">${element.task_name}</a>
+  </div>
+  <div class="task-actions">
+      <select data-task-id="${element.id}" class="form-select" aria-label="Default select example">
+          <option selected>${element.status}</option>
+          <option value="Concluído">Concluído</option>
+          <option value="Pausado">Pausado</option>
+          <option value="Em Progresso">Em Progresso</option>
+          <option value="Pendências">Pendências</option>
+      </select>
+  </div>
+
+
+  /////
+
+  tableElement.innerHTML = `
+  <div  class='task-info'>
+    <span>${element.task_name}</span>
+  </div>
+  <div class="task-actions">
+  <input class="checkbox" data-task_id="${element.id}" value="true" type="checkbox" name="" id="">
+      <select data-task_id="${element.id}" class="form-select" aria-label="Default select example">
+          <option selected>${element.status}</option>
+          <option value="Concluído">Concluído</option>
+          <option value="Pausado">Pausado</option>
+          <option value="Em Progresso">Em Progresso</option>
+          <option value="Pendências">Pendências</option>
+      </select>
+  </div>
+  `;
